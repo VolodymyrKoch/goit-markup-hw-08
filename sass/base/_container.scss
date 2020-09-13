@@ -7,8 +7,6 @@
   header & {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
-    align-items: center;
   }
 
   @media screen and (min-width: 480px) {
@@ -19,6 +17,8 @@
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    justify-content: center;
+    align-items: center;
   }
 }
 

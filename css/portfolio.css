@@ -65,8 +65,6 @@ img {
 header .container {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
-  align-items: center;
 }
 
 @media screen and (min-width: 480px) {
@@ -84,7 +82,18 @@ header .container {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    justify-content: center;
+    align-items: center;
   }
+}
+
+.hero .button {
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  padding: 10px 32px;
+  line-height: 1.875;
+  font-weight: bold;
 }
 
 .button {
@@ -130,8 +139,6 @@ header .addres-link {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.167;
   letter-spacing: 0.02em;
   color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -146,12 +153,8 @@ header .addres-link:focus .address-img {
   fill: #2196f3;
 }
 
-header .address-img.mail {
-  width: 16px;
-  height: 11px;
-  vertical-align: baseline;
-  fill: #757575;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+header .address-img {
+  margin-right: 10px;
 }
 
 header .address-img.mob {
@@ -162,8 +165,12 @@ header .address-img.mob {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-header .address-img {
-  margin-right: 10px;
+header .address-img.mail {
+  width: 16px;
+  height: 11px;
+  vertical-align: baseline;
+  fill: #757575;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 header .current {
@@ -225,8 +232,17 @@ header .current::after {
   .btn_smart_menu.is-open .close-menu-icon {
     display: block;
   }
+  .mobile_menu-icon:hover,
+  .mobile_menu-icon:focus {
+    fill: #2196f3;
+  }
   .addres-link {
+    font-size: 18px;
+    line-height: 1.167;
     display: block;
+  }
+  .addres-link:not(:last-child) {
+    margin-bottom: 16px;
   }
   .item:not(:last-child) {
     margin-bottom: 40px;
@@ -234,17 +250,18 @@ header .current::after {
   .header__list {
     margin-bottom: 60px;
   }
-  .addres-link:not(:last-child) {
-    margin-bottom: 16px;
-  }
 }
 
 @media screen and (min-width: 768px) {
   .btn_smart_menu {
     display: none;
   }
+  .header_menu {
+    display: flex;
+    width: 100%;
+  }
   .header__address {
-    margin-left: auto;
+    margin-top: -9px;
   }
   header .item + .item {
     margin-left: 50px;
@@ -257,8 +274,8 @@ header .current::after {
     line-height: 1.43;
     display: block;
   }
-  .addres-link:not(:last-child) {
-    margin-right: 50px;
+  header .address-img {
+    margin-right: 8px;
   }
   .address-img.mail {
     width: 16px;
@@ -271,8 +288,10 @@ header .current::after {
     vertical-align: bottom;
   }
   .addres-link {
-    font-size: 14px;
-    line-height: 1.143;
+    font-size: 12px;
+    line-height: 1.167;
+    display: block;
+    padding-bottom: 10px;
   }
   nav .current {
     color: #2196f3;
@@ -284,7 +303,7 @@ header .current::after {
   }
   .header__nav {
     display: flex;
-    align-items: baseline;
+    padding-right: 83px;
   }
   .header__list {
     display: flex;
@@ -294,20 +313,18 @@ header .current::after {
   }
 }
 
-.logo {
-  color: #2196f3;
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  margin-right: 93px;
-}
-
-@media screen and (max-width: 767px) {
-  .logo p {
-    display: inline-block;
-    margin: 16px 0px;
+@media screen and (min-width: 1200px) {
+  .addres-link:not(:last-child) {
+    margin-right: 50px;
+  }
+  .addres-link {
+    font-size: 14px;
+    line-height: 1.143;
+  }
+  .header__address {
+    display: flex;
+    margin: 0;
+    margin-left: auto;
   }
 }
 
@@ -317,5 +334,35 @@ header .current::after {
 
 .page-footer .logo_Studio {
   color: #ffffff;
+}
+
+.logo {
+  color: #2196f3;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 767px) {
+  .logo p {
+    display: inline-block;
+    margin: 16px 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */
