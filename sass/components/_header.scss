@@ -76,7 +76,6 @@ header {
 
 @media screen and (max-width: 767px) {
   .header_menu {
-    display: none;
     position: absolute;
     width: 100%;
     height: min-content;
@@ -88,9 +87,16 @@ header {
     // display: block;
     text-align: center;
     padding: 60px 0px;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 250ms linear;
   }
   .header_menu.is-open {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: unset;
   }
   .btn_smart_menu {
     position: relative;
