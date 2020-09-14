@@ -78,9 +78,12 @@
   .advantages {
     padding-top: 94px;
     padding-bottom: 0;
+
+    .advantages__item {
+      margin-bottom: 0;
+    }
   }
   .advantages__item {
-    margin-bottom: 0px;
     width: calc((100% - 90px) / 4);
     &:not(:last-child) {
       margin-right: 30px;
