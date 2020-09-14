@@ -120,6 +120,15 @@ header .container {
   font-weight: bold;
 }
 
+.filter .button {
+  letter-spacing: 0.03em;
+  color: #212121;
+  background: #f5f4fa;
+  padding: 6px 22px;
+  line-height: 1.625;
+  font-weight: 500;
+}
+
 .button {
   font-family: Roboto;
   font-style: normal;

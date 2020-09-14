@@ -14,32 +14,40 @@
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body>
-    <header>
-      <div class="container leveling">
+  <header>
+    <div class="container leveling">
+      <a class="logo" href="./index.html">
+        <p>Web<span class="logo_Studio">Studio</span></p>
+      </a>
+      <button type="button" class="btn_smart_menu" aria-expanded="false" aria-controls="header_menu" data-menu-button>
+        <svg width="40" height="40" class="mobile_menu-icon" aria-label="переключатель мобильного меню">
+          <!-- <use href="./images/svg_sprite/sprite_optim.svg#icon-menu_24px"></use>
+              <use href="./images/svg_sprite/sprite_optim.svg#icon-close_24px"></use> -->
+          <use class="open-menu-icon" href="./images/svg_sprite/header/svgspite-optm-new.svg#icon-menu_40px"></use>
+          <use class="close-menu-icon" href="./images/svg_sprite/header/svgspite-optm-new.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+      <div class="header_menu" data-menu>
         <nav class="header__nav">
-          <a class="logo" href="./index.html">
-            <p>Web<span class="logo_Studio">Studio</span></p>
-          </a>
           <ul class="header__list">
-            <li class="item"><a class="link" href="./index.html">Студия</a></li>
+            <li class="item"><a class="link " href="./index.html">Студия</a></li>
             <li class="item"><a class="link current" href="./portfolio.html">Портфолио</a></li>
             <li class="item"><a class="link" href="">Контакты</a></li>
           </ul>
         </nav>
         <address class="header__address">
-          <a class="addres-link" href="mailto:info@devstudio.com"
-            ><svg class="address-img mail">
-              <use href="./images/svg_sprite/sprite_optim.svg#icon-mail"></use></svg
-            >info@devstudio.com</a
-          >
-          <a class="addres-link" href="tell:+380961111111"
-            ><svg class="address-img mob">
-              <use href="./images/svg_sprite/sprite_optim.svg#icon-mob"></use></svg
-            >+38 096 111 11 11</a
-          >
+          <a class="addres-link" href="mailto:info@devstudio.com">
+            <svg width="16" height="12" class="address-img mail">
+              <use href="./images/svg_sprite/sprite_optim.svg#icon-mail"></use>
+            </svg>info@devstudio.com</a>
+          <a class="addres-link" href="tell:+380961111111">
+            <svg width="10" height="15" class="address-img mob">
+              <use href="./images/svg_sprite/sprite_optim.svg#icon-mob"></use>
+            </svg>+38 096 111 11 11</a>
         </address>
       </div>
-    </header>
+    </div>
+  </header>
 
     <main>
       <!-- наші проекти  -->
@@ -63,7 +71,7 @@
                     class="our_projects__img"
                     src="./images/portfolio/p-folio_tehnokriak.jpg"
                     alt="Веб-сайты"
-                    width="370px"
+                    width="100%"
                     height="294px"
                   />
                   <p class="our_projects__text">
@@ -84,7 +92,7 @@
                     class="our_projects__img"
                     src="./images/portfolio/p-folio_poster_New_Orlean.jpg"
                     alt="Постери"
-                    width="370px"
+                    width="100%"
                     height="294px"
                   />
                   <p class="our_projects__text">
@@ -105,7 +113,7 @@
                     class="our_projects__img"
                     src="./images/portfolio/p-folio_restaurant_Seafood.jpg"
                     alt="ресторани"
-                    width="370px"
+                    width="100%"
                     height="294px"
                   />
                   <p class="our_projects__text">
@@ -126,7 +134,7 @@
                     class="our_projects__img"
                     src="./images/portfolio/p-folio_Project_Prime.jpg"
                     alt="Проект Прайм"
-                    width="370px"
+                    width="100%"
                     height="294px"
                   />
                   <p class="our_projects__text">
@@ -147,7 +155,7 @@
                     class="our_projects__img"
                     src="./images/portfolio/p-folio_project_Boxes.jpg"
                     alt="project  Boxes"
-                    width="370px"
+                    width="100%"
                     height="294px"
                   />
                   <p class="our_projects__text">
@@ -168,7 +176,7 @@
                     class="our_projects__img"
                     src="./images/portfolio/p-folio_Inspiration_has_no_Borders.jpg"
                     alt="Inspiration has no Borders"
-                    width="370px"
+                    width="100%"
                     height="294px"
                   />
                   <p class="our_projects__text">
@@ -189,7 +197,7 @@
                     class="our_projects__img"
                     src="./images/portfolio/p-folio_publication_Limited_Edition.jpg"
                     alt="Издание Limited Edition"
-                    width="370px"
+                    width="100%"
                     height="294px"
                   />
                   <p class="our_projects__text">
@@ -210,7 +218,7 @@
                     class="our_projects__img"
                     src="./images/portfolio/p-folio_project_LAB.jpg"
                     alt="Проект LAB"
-                    width="370px"
+                    width="100%"
                     height="294px"
                   />
                   <p class="our_projects__text">
@@ -231,7 +239,7 @@
                     class="our_projects__img"
                     src="./images/portfolio/p-folio_Growing_Business.jpg"
                     alt="Growing Business"
-                    width="370px"
+                    width="100%"
                     height="294px"
                   />
                   <p class="our_projects__text">
