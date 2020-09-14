@@ -86,6 +86,12 @@ header .container {
   }
 }
 
+@media screen and (max-width: 767px) {
+  header .container.leveling {
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .specialty.section__joint {
     display: none;
