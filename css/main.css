@@ -777,6 +777,9 @@ header .current::after {
   .team__item {
     width: calc((100% - 90px) / 3);
   }
+  .team__list .team__item {
+    margin-bottom: 0px;
+  }
   .team__item + .team__item {
     margin-left: 30px;
   }
