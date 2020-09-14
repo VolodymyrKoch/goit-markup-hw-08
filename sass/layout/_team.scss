@@ -109,6 +109,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .team {
+    padding: 60px 0px;
+  }
   .team__list {
     display: flex;
     flex-wrap: wrap;
@@ -120,6 +123,11 @@
     margin-right: 30px;
   }
   .team__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 28px;
+    line-height: 1.179;
     margin-bottom: 30px;
   }
 }
