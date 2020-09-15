@@ -2,7 +2,16 @@
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/baner.jpg");
+  background-size: cover;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/hero/HeaderMobimg.jpg");
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+    screen and (min-resolution: 192dpi) and (min-width: 320px),
+    screen and (min-resolution: 2dppx) and (min-width: 320px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/hero/HeaderMobimg@2x.jpg");
+  }
   .title {
     font-family: Roboto;
     font-weight: 900;
@@ -32,7 +41,21 @@
     min-height: 400px;
   }
 }
+
+// 1111111
 @media screen and (min-width: 768px) {
+  .hero {
+    min-height: 400px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/hero/HeaderTabletimg.jpg");
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/hero/HeaderTabletimg@2x.jpg");
+    }
+  }
   .hero .title {
     font-size: 26px;
     line-height: 1.615;
@@ -42,7 +65,21 @@
     min-height: 400px;
   }
 }
+
+// 1200111
 @media screen and (min-width: 1200px) {
+  .hero {
+    min-height: 600px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/baner.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/hero/banerDesktop@2x.jpg");
+    }
+  }
   .hero .title {
     font-size: 44px;
     line-height: 1.364;
@@ -50,60 +87,5 @@
   .hero__bloс {
     max-width: 696px;
     min-height: 600px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .hero {
-    min-height: 400px;
-    background-size: cover;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../images/hero/HeaderMobimg.jpg");
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
-  screen and (min-resolution: 192dpi) and (min-width: 480px),
-  scren and (min-resolution: 2dppx) and (min-width: 480px),
-  // screen and (min-width: 480px) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../images/hero/HeaderMobimg@2x.jpg");
-  }
-}
-// 1111111
-@media screen and (min-width: 768px) {
-  .hero {
-    min-height: 400px;
-    background-size: cover;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../images/hero/HeaderTabletimg.jpg");
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  scren and (min-resolution: 2dppx) and (min-width: 768px),
-  // screen and (min-width: 768px) 
-  {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../images/hero/HeaderTabletimg@2x.jpg");
-  }
-}
-// 1200111
-@media screen and (min-width: 1200px) {
-  .hero {
-    min-height: 600px;
-    background-size: cover;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/baner.jpg");
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  scren and (min-resolution: 2dppx) and (min-width: 1200px),
-  // screen and (min-width: 1200px) 
-  {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../images/hero/banerDesktop@2x.jpg");
   }
 }
