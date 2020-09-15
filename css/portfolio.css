@@ -661,6 +661,9 @@ header .current::after {
   .em {
     margin-bottom: 15px;
   }
+  .our_projects__text {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
