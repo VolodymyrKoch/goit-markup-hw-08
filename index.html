@@ -140,26 +140,53 @@
           <h2 class="team__title section-title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <source
-                srcset="./images/team/igor.jpg 1x, ./images/team/optteamdesktop2x/igoroptteamdesktop@2x.jpg 2x"
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="
-                  ./images/team/optteamtablet2x/igoroptteamtablet1x.jpg  1x,
-                  ./images/team/optteamtablet2x/igoroptteamtablet@2x.jpg 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./images/team/optteammob2x/igoroptteammob1x.jpg  1x,
-                  ./images/team/optteammob2x/optteammobigor@2x.jpg 2x
-                "
-                media="(min-width: 320px)"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop_webp/igordesktop_webp1x.webp         1x,
+                    ./images/team/desktop_webp/igoroptteamdesktop_webp@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/igor.jpg 1x, ./images/team/optteamdesktop2x/igoroptteamdesktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
 
-              <img class="team__img" src="./images/team/igor.jpg" alt="Игорь Демьяненко" width="100%" height="260" />
+                <source
+                  srcset="
+                    ./images/team/optteamtablet2x/igor_optteamtablet_1x.webp      1x,
+                    ./images/team/optteamtablet2x/igor_optteamtablet_webp@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/optteamtablet2x/igoroptteamtablet1x.jpg  1x,
+                    ./images/team/optteamtablet2x/igoroptteamtablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/optteammob2x/igo_roptteammob_webp1x.webp  1x,
+                    ./images/team/optteammob2x/optteammob_igor_webp@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/optteammob2x/igoroptteammob1x.jpg  1x,
+                    ./images/team/optteammob2x/optteammobigor@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img class="team__img" src="./images/team/igor.jpg" alt="ігор" width="100%" height="260" />
+              </picture>
               <div class="team__card">
                 <h3 class="team__subtitle">Игорь Демьяненко</h3>
                 <p class="team__descript">Product Designer</p>
@@ -196,7 +223,53 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" src="./images/team/olha.jpg" alt="Ольга Репина" width="100%" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop_webp/olhadesktop_webp1x.webp         1x,
+                    ./images/team/desktop_webp/optteamdesktopolha_webp@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/olha.jpg 1x, ./images/team/optteamdesktop2x/optteamdesktopolha@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/optteamtablet2x/olha_optteamtablet_webp1x.webp  1x,
+                    ./images/team/optteamtablet2x/olha_optteamtablet_webp@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/optteamtablet2x/olhaoptteamtablet.jpg    1x,
+                    ./images/team/optteamtablet2x/olhaoptteamtablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/optteammob2x/optteammob_olha_webp1x.webp 1x,
+                    ./images/team/optteammob2x/olhaoptteammob_webp@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/optteammob2x/optteammob1xolha.jpg  1x,
+                    ./images/team/optteammob2x/olhaoptteammob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img class="team__img" src="./images/team/olha.jpg" alt="Ольга Репина" width="100%" height="260" />
+              </picture>
               <div class="team__card">
                 <h3 class="team__subtitle">Ольга Репина</h3>
                 <p class="team__descript">Frontend Developer</p>
@@ -233,7 +306,54 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" src="./images/team/mykola.jpg" alt="Николай Тарасов" width="100%" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop_webp/mykoladesktop_webp1x.webp         1x,
+                    ./images/team/desktop_webp/mykolaoptteamdesktop_webp@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/mykola.jpg 1x, ./images/team/optteamdesktop2x/mykolaoptteamdesktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/optteamtablet2x/mykola_optteamtablet_webp1x.webp  1x,
+                    ./images/team/optteamtablet2x/mykola_optteamtablet_webp@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/optteamtablet2x/mykolaoptteamtablet1x.jpg  1x,
+                    ./images/team/optteamtablet2x/mykolaoptteamtablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/optteammob2x/mykola_optteammob_webp1x.webp 1x,
+                    ./images/team/optteammob2x/mykolaoptteammob_webp@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/optteammob2x/mykolaoptteammob1x.jpg  1x,
+                    ./images/team/optteammob2x/mykolaoptteammob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img class="team__img" src="./images/team/mykola.jpg" alt="Николай Тарасов" width="100%" height="260" />
+              </picture>
               <div class="team__card">
                 <h3 class="team__subtitle">Николай Тарасов</h3>
                 <p class="team__descript">Marketing</p>
@@ -270,7 +390,54 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" src="./images/team/myhailo.jpg" alt="Михаил Ермаков" width="100%" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop_webp/myhailo_optteamdesktop_webp1x.webp  1x,
+                    ./images/team/desktop_webp/myhailo3optteamdesktop_webp@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/myhailo.jpg 1x, ./images/team/optteamdesktop2x/myhailo3optteamdesktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/optteamtablet2x/myhailo_optteamtablet_webp1x.webp  1x,
+                    ./images/team/optteamtablet2x/myhailo_optteamtablet_webp@2x.webp
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/optteamtablet2x/myhailooptteamtablet1x.jpg  1x,
+                    ./images/team/optteamtablet2x/myhailooptteamtablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/optteammob2x/myhailooptteam_mob_webp1x.webp 1x,
+                    ./images/team/optteammob2x/optteammobmyhailo_webp@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/optteammob2x/myhailooptteammob1x.jpg  1x,
+                    ./images/team/optteammob2x/optteammobmyhailo@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img class="team__img" src="./images/team/myhailo.jpg" alt="Михаил Ермаков" width="100%" height="260" />
+              </picture>
               <div class="team__card">
                 <h3 class="team__subtitle">Михаил Ермаков</h3>
                 <p class="team__descript">UI Designer</p>
